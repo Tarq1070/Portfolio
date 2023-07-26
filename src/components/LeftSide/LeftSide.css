@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+.CoverImage{
+    background-image: url("../../Assets/Images/bg\ \(1\).jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 350px;
+    border-radius: 10px 10px 0px 0px;
+    animation: bgChange 60s infinite;
+}
+
+@keyframes bgChange {
+    0%{
+        background-image: url("../../Assets/Images/bg\ \(2\).jpg");
+    }
+    10%{
+        background-image: url("../../Assets/Images/bg\ \(3\).jpg");
+    }
+    20%{
+        background-image: url("../../Assets/Images/bg\ \(4\).jpg");
+    }
+    30%{
+        background-image: url("../../Assets/Images/bg\ \(5\).jpg");
+    }
+    40%{
+        background-image: url("../../Assets/Images/bg\ \(6\).jpg");
+    }
+    50%{
+        background-image: url("../../Assets/Images/bg\ \(7\).jpg");
+    }
+    60%{
+        background-image: url("../../Assets/Images/bg\ \(8\).jpg");
+    }
+    70%{
+        background-image: url("../../Assets/Images/bg\ \(9\).jpg");
+    }
+    80%{
+        background-image: url("../../Assets/Images/bg\ \(10\).jpg");
+    }
+    90%{
+        background-image: url("../../Assets/Images/bg\ \(11\).jpg");
+    }
+    100%{
+        background-image: url("../../Assets/Images/bg\ \(12\).jpg");
+    }
+    
+  }
+body{
+    font-family: 'Inconsolata', monospace;
+}
+.pic{
+    border-radius: 100%;
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    bottom: -50px;
+    left: 35%;
+    border: 1px solid var(--greenColor);
+}
+.pic{
+    box-shadow: -10px 10px 5px var(--lightGreenColor);
+}
+
+.title{
+    font-size: 40px;
+    font-family: 'Inconsolata', monospace;
+    font-weight: 600;
+}
+
+
+.des{
+    font-size: 15px;
+    margin-top: 10px;
+    font-family: 'Inconsolata', monospace;
+    color: var(--greenColor);
+
+}
+.iconBox{
+    margin-top: 20px;
+    padding: 10px;
+    width: 20px;
+    height: 20px;
+    border-radius: 100%;
+    transition:  1s background-color ;
+}
+.iconBox:hover{
+
+    background-color: var(--greenColor);
+    .icon{
+
+        fill: white !important;
+    }
+    
+   
+}
+.icon{
+
+    fill: var(--lableColor) !important;
+}
+
+
+.socialMedia{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.bottomBtn{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.btn{
+    background-color: transparent;
+    color: var(--fontColor);
+    border-radius: 0%;
+    border: none;
+    border-top:  1px solid var(--borderColor);
+    width: 50%;
+    box-shadow: none;
+    height: 50px;
+    font-weight: 600;
+    font-family: 'Inconsolata', monospace;
+}
+
+@media screen and (max-width: 800px) {
+    .bottomBtn{
+        margin-top: 70px;
+        position: relative;
+   
+    }
+}

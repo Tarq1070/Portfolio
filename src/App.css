@@ -1,38 +1,84 @@
-.App {
-  text-align: center;
+@import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@300;400;500;600&display=swap");
+:root {
+  --bgColor: #191a22;
+  --fontColor: #d5d5d5;
+  --greenColor: #00b453;
+  --lightGreenColor: #0aff1a31;
+  --lableColor: #535353;
+  --divColor: #22232e;
+  --borderColor: #42455e;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+* {
+  font-family: "Inconsolata", monospace;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+body {
+  background-color: var(--bgColor);
+  color: var(--fontColor);
+  font-family: "Inconsolata", monospace !important;
+  padding: 20px;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  cursor: url("./Assets/Icons/normalCursor.png"),auto;
 }
 
-.App-link {
-  color: #61dafb;
+a{
+  cursor: url("./Assets/Icons/cursorPointer.png"),auto;
+
+}
+button{
+  cursor: url("./Assets/Icons/cursorPointer.png"),auto !important;
+}
+Button{
+  cursor: url("./Assets/Icons/cursorPointer.png"),auto !important;
+}
+Link{
+  cursor: url("./Assets/Icons/cursorPointer.png"),auto !important;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.bg {
+  background-color: var(--divColor);
+  height: 94vh;
+  width: 80vw;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: row;
+  padding: 10px;
+  gap: 10px;
+}
+
+.leftSide {
+  flex: 2;
+  border-radius: 10px;
+  background-color: var(--divColor);
+  box-shadow: 5px 5px 20px var(--bgColor);
+}
+
+.rightSide {
+  flex: 3;
+  background-color: var(--divColor);
+  border-radius: 10px;
+}
+.mouseCursor{
+  z-index: 1;
+  position: absolute;
+  background-color: #00b45459;
+  width: 30px;
+  height: 30px;
+  border-radius: 100%;
+}
+
+
+
+@media screen and (max-width: 800px) {
+  .bg {
+    display: block;
+    /* flex-direction: column; */
+    padding: 0px;
   }
-  to {
-    transform: rotate(360deg);
+  .rightSide {
+    margin-top: 10px;
   }
 }
+
+

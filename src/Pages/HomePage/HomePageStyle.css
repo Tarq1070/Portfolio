@@ -1,0 +1,9 @@
+.infoBox{
+    padding: 20px;
+    
+}
+.intro{
+    font-size: 20px;
+    font-weight: 500;
+    color: var(--greenColor);
+}
