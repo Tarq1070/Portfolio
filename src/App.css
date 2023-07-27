@@ -2,9 +2,9 @@
 :root {
   --bgColor: #191a22;
   --fontColor: #d5d5d5;
-  --greenColor: #00b453;
+  --greenColor: #00da64;
   --lightGreenColor: #0aff1a31;
-  --lableColor: #535353;
+  --lableColor: #959595;
   --divColor: #22232e;
   --borderColor: #42455e;
 }
@@ -19,21 +19,31 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  cursor: url("./Assets/Icons/normalCursor.png"),auto;
+  cursor: url("./Assets/Icons/normalCursor.png"), auto;
+  /* overflow: hidden;s */
+  overflow-x: hidden;
+}
+::-webkit-scrollbar {
+  width: 6px;
+  height: 60px !important;
+  background-color: transparent;
 }
 
-a{
-  cursor: url("./Assets/Icons/cursorPointer.png"),auto;
-
+::-webkit-scrollbar-thumb {
+  background-color: rgb(72, 72, 72);
+  border-radius: 20px;
 }
-button{
-  cursor: url("./Assets/Icons/cursorPointer.png"),auto !important;
+a {
+  cursor: url("./Assets/Icons/cursorPointer.png"), auto;
 }
-Button{
-  cursor: url("./Assets/Icons/cursorPointer.png"),auto !important;
+button {
+  cursor: url("./Assets/Icons/cursorPointer.png"), auto !important;
 }
-Link{
-  cursor: url("./Assets/Icons/cursorPointer.png"),auto !important;
+Button {
+  cursor: url("./Assets/Icons/cursorPointer.png"), auto !important;
+}
+Link {
+  cursor: url("./Assets/Icons/cursorPointer.png"), auto !important;
 }
 
 .bg {
@@ -56,29 +66,33 @@ Link{
 
 .rightSide {
   flex: 3;
+  margin: 0px;
   background-color: var(--divColor);
   border-radius: 10px;
+  overflow: scroll;
+  overflow-x: hidden;
 }
-.mouseCursor{
+.rightSide::-webkit-scrollbar {
+  display: none;
+}
+
+.mouseCursor {
   z-index: 1;
   position: absolute;
-  background-color: #00b45459;
-  width: 30px;
-  height: 30px;
-  border-radius: 100%;
+  background-color: rgb(0, 68, 255);
+  padding: 5px;
+  border-radius: 0px 10px 10px 10px;
+  pointer-events: none;
+  font-weight: 500;
+  font-size: 15px;
 }
-
-
 
 @media screen and (max-width: 800px) {
   .bg {
     display: block;
-    /* flex-direction: column; */
     padding: 0px;
   }
   .rightSide {
-    margin-top: 10px;
+    margin-top: 30px;
   }
 }
-
-

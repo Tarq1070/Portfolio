@@ -1,6 +1,6 @@
 import { Button, Col, Row, Space } from "antd";
 import "./LeftSide.css";
-import { CloudDownloadOutlined ,SendOutlined } from "@ant-design/icons";
+import { CloudDownloadOutlined, SendOutlined } from "@ant-design/icons";
 import youtube from "../../Assets/Icons/yt.svg";
 import instagram from "../../Assets/Icons/instagram.svg";
 import github from "../../Assets/Icons/github.svg";
@@ -10,6 +10,12 @@ import fb from "../../Assets/Icons/facebook.svg";
 
 import pic from "../../Assets/Images/pic.jpg";
 export function LeftSide() {
+  const facebook = "https://www.facebook.com/Nitishroy7033/";
+  const github = "https://github.com/MrNitishroy";
+  const linkedin = "https://www.linkedin.com/in/mrnitishkumar/";
+  const linktree = "https://linktr.ee/nitishroy7033";
+  const instagram = "https://www.instagram.com/nitishroy7033/";
+  const youtube = "https://www.youtube.com/@flutterhero";
   return (
     <>
       <Col>
@@ -28,7 +34,7 @@ export function LeftSide() {
         Full stack developer
       </Row>
       <Row className="socialMedia" justify={"center"}>
-        <a href="#" className="iconBox">
+        <a href={facebook} target="_blank" className="iconBox">
           <svg
             width="20"
             height="20"
@@ -41,7 +47,7 @@ export function LeftSide() {
             />
           </svg>
         </a>
-        <a href="#" className="iconBox">
+        <a href={github} target="_blank" className="iconBox">
           <svg
             width="20"
             height="20"
@@ -54,7 +60,7 @@ export function LeftSide() {
             />
           </svg>
         </a>
-        <a href="#" className="iconBox">
+        <a href={instagram} target="_blank" className="iconBox">
           <svg
             width="20"
             height="20"
@@ -67,7 +73,7 @@ export function LeftSide() {
             />
           </svg>
         </a>
-        <a href="#" className="iconBox">
+        <a href={linkedin} target="_blank" className="iconBox">
           <svg
             width="18"
             height="18"
@@ -80,7 +86,7 @@ export function LeftSide() {
             />
           </svg>
         </a>
-        <a href="#" className="iconBox">
+        <a href={linktree} target="_blank" className="iconBox">
           <svg
             width="20"
             height="24"
@@ -94,11 +100,32 @@ export function LeftSide() {
             />
           </svg>
         </a>
+        <a href={youtube} target="_blank" className="iconBox">
+          <svg
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="white"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+             className="icon"
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M12 4C12.855 4 13.732 4.022 14.582 4.058L15.586 4.106L16.547 4.163L17.447 4.224L18.269 4.288C19.161 4.35628 20.0004 4.73695 20.6395 5.36304C21.2786 5.98913 21.6764 6.82054 21.763 7.711L21.803 8.136L21.878 9.046C21.948 9.989 22 11.017 22 12C22 12.983 21.948 14.011 21.878 14.954L21.803 15.864C21.79 16.01 21.777 16.151 21.763 16.289C21.6764 17.1796 21.2784 18.0112 20.6391 18.6373C19.9999 19.2634 19.1602 19.6439 18.268 19.712L17.448 19.775L16.548 19.837L15.586 19.894L14.582 19.942C13.7218 19.9794 12.861 19.9987 12 20C11.139 19.9987 10.2782 19.9794 9.418 19.942L8.414 19.894L7.453 19.837L6.553 19.775L5.731 19.712C4.83895 19.6437 3.99955 19.2631 3.36047 18.637C2.72139 18.0109 2.32357 17.1795 2.237 16.289L2.197 15.864L2.122 14.954C2.04554 13.9711 2.00484 12.9858 2 12C2 11.017 2.052 9.989 2.122 9.046L2.197 8.136C2.21 7.99 2.223 7.849 2.237 7.711C2.32354 6.8207 2.72122 5.98942 3.36009 5.36334C3.99897 4.73727 4.83813 4.3565 5.73 4.288L6.551 4.224L7.451 4.163L8.413 4.106L9.417 4.058C10.2775 4.02063 11.1387 4.0013 12 4ZM10 9.575V14.425C10 14.887 10.5 15.175 10.9 14.945L15.1 12.52C15.1914 12.4674 15.2673 12.3916 15.3201 12.3003C15.3729 12.209 15.4007 12.1055 15.4007 12C15.4007 11.8945 15.3729 11.791 15.3201 11.6997C15.2673 11.6084 15.1914 11.5326 15.1 11.48L10.9 9.056C10.8088 9.00332 10.7053 8.9756 10.5999 8.97562C10.4945 8.97563 10.3911 9.00339 10.2998 9.0561C10.2086 9.1088 10.1329 9.1846 10.0802 9.27587C10.0276 9.36713 9.99993 9.47065 10 9.576V9.575Z"
+             
+            />
+          </svg>
+        </a>
       </Row>
 
       <Row className="bottomBtn" justify={"space-between"}>
-        <Button className="btn">Download CV <CloudDownloadOutlined /></Button>
-        <Button className="btn"> Contact Me <SendOutlined /></Button>
+        <Button className="btn">
+          Download CV <CloudDownloadOutlined />
+        </Button>
+        <Button className="btn">
+          Contact Me <SendOutlined />
+        </Button>
       </Row>
     </>
   );

@@ -1,0 +1,21 @@
+.left{
+    border-right: 1px solid var(--borderColor);
+    width: 50%;
+    /* height: 20px; */
+    padding: 10px;
+}
+
+.right{
+   
+    width: 50%;
+    padding: 10px;
+
+}
+.circle{
+    border: 2px solid var(--greenColor);
+    padding: 10px;
+    border-radius: 100%;
+}
+.la{
+    gap: 10px;
+}

@@ -33,8 +33,8 @@ function App() {
   return (
     <>
       <Col className="bg">
-        <div className="mouseCursor" style={{ top:`${y-40}px`, left:`${x-170}px`}} >
-       
+        <div className="mouseCursor" style={{ top:`${y}px`, left:`${x-130}px`}} >
+        Nitish kumar
         </div>
         <Taskbar />
         <Col className="leftSide"><LeftSide/> </Col>

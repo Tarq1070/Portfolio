@@ -1,0 +1,91 @@
+h2{
+    font-size: 20px;
+}
+
+
+p{
+    font-size: 16px;
+    color: var(--lableColor);
+    line-height: 1.6;
+}
+
+.green{
+    color: var(--greenColor);
+    font-weight: bold;
+}
+
+.divider{
+    height: 1px;
+    background-image: linear-gradient(to left,  var(--divColor) 10%, var(--borderColor) 90%);
+}
+
+
+.skillDiv{
+    width: 50%;
+    padding: 30px;
+    border-right: 1px solid var(--borderColor);
+    border-image: linear-gradient(bottom top,  var(--divColor) 10%, var(--borderColor) 90%);;
+}
+
+.skillLogo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100%;
+    width: 60px;
+    height: 60px;
+    background-color: transparent;
+    border: 2px solid var(--greenColor);
+}
+.testmonial{
+    /* background-color: aliceblue; */
+    height: 200px;
+}
+.userReview{
+ padding: 20px;
+ display: flex !important;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+}
+.review{
+    text-align: center;
+}
+
+.photo{
+    padding: 10px;
+    background-color: rgb(63, 63, 63);
+    border-radius: 100%;
+}
+.name{
+    color:var(--fontColor) !important;
+}
+.review{
+  
+    text-align: center;
+    color: var(--lableColor);
+    margin-bottom: 10px;
+}
+.boldLable{
+    /* font-size: 18px; */
+    color: var(--fontColor);
+}
+
+.leftBox{
+    width: 50%;
+    /* background-color: aliceblue; */
+}
+.rightBox{
+    /* background-color: aliceblue; */
+    width: 50%;
+}
+
+.bullet{
+    width: 20px;
+    height: 20px;
+    background-color: aliceblue;
+}
+
+.pinfo{
+    display: flex;
+}
