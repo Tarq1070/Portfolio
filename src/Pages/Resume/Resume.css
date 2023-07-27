@@ -19,3 +19,30 @@
 .la{
     gap: 10px;
 }
+.pro{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.softwareName{
+    margin: 8px 0px;
+}
+
+.knowledge{
+    margin: 0px !important;
+    gap: 10px;
+}
+.knowName{
+    margin: 8px 0px;
+}
+
+.lanCircle{
+    width: 15px;
+    height: 15px;
+    border-radius: 100%;
+    background-color: var(--lableColor);
+}
+
+.completed{
+    background-color: var(--greenColor);
+}

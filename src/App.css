@@ -96,3 +96,8 @@ Link {
     margin-top: 30px;
   }
 }
+
+
+.ant-progress-text{
+  color: var(--lableColor) !important;
+}
